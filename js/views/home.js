@@ -8,9 +8,7 @@ define(function (require) {
         tether              = require('tether'),
         d3                  = require('d3'),
         bootstrap           = require('bootstrap'),
-
         HTML                = require('text!html/Home.html'),
-
         template = _.template(HTML);
 
     return Backbone.View.extend({
@@ -158,13 +156,23 @@ define(function (require) {
             // goWhite();
             setTimeout(goWhite, 200);
 
+	    function color(transition, fill, stroke) {
+  		transition
+      		.style("fill", fill)
+      		.style("stroke", stroke);
+	    }	
+
             function goWhite(){
                 d3.selectAll("path")
                     .transition()
-                    .duration(8000)
-                    .style("opacity",".3");
-                    // .style("fill","rgb(200, 200, 200)");
-                setTimeout(goBlue, 8000);
+                    	.duration(1000)
+                    	.style("opacity",".3");
+		    .transition()
+			.duration(1000)
+			.style("opacity","1");
+                    	// .style("fill","rgb(200, 200, 200)");
+                setTimeout(goBlue, 2100);
+		
             }
 
             function goBlue(){
@@ -175,78 +183,7 @@ define(function (require) {
                     // .style("fill","rgb(50, 10, 255)");
                 setTimeout(goWhite, 8000);
             }
-            
-
-
-
-            // setInterval(function(){
-                // $path[Math.floor(Math.random()*amtOfPaths)].animate({
-                //     opacity: 0.25
-                // }, 500);    
-
-
-                    // .transition(t)
-                    //     .style("fill", "rgb(50, 10, 255)")
-                    // .transition(t)
-                    //     .style("fill", "rgb(255, 255, 255)");
-
-
-                // .transition(1000)
-                // .duration(2500)
-                // .style("fill", "rgb(255, 255, 255)");
-
-
-                // var ranNum = Math.floor(Math.random()*amtOfPaths);
-                // $path[ranNum].style("opacity",0.25);
-                // console.log($path[ranNum]);
-                // }, 500);
-            // },500);
-
-            
         },
-        animateBG: function(){
-            //JS to create random color grid
-            console.log("yoyo its ya boi animateBG here");
-
-            var grid = $('#grid');
-            var s = 50;  //space between blocks
-            var n = 2;  //shadow range (space between shadow waves)
-            var h = ($( window ).height() / 2)/35;//amount of vertical boxes
-            // var l = 30;  //grid length
-            var l = Math.floor(grid.width() / 50)+1;  //grid length
-
-            grid.empty();
-            
-
-            //random colors 
-            var rndRed = function() {
-                return Math.ceil(Math.random() * 30+10);
-            };
-            var rndGreen = function() {
-                // return Math.ceil(Math.random() * 225+30);
-                return Math.ceil(Math.random() * 30+10);
-            };
-            var rndBlue = function() {
-                return Math.ceil(Math.random() * 115+140);
-            };
-            for (var i = 0; i < h; i++) {
-                for (var j = 0; j < l; j++) {
-                    var r = rndRed();
-                    var g = rndGreen();
-                    var b = rndBlue();
-                    var a = Math.random()*0.5+0.3;
-                    var style = {
-                        'top': i * (s + n) + 'px',
-                        'left': j * (s + n) + 'px',
-                        'background': 'rgba(' + r + ', ' + g + ', ' + b + ', ' + a + ')',
-                        'background-image': 'linear-gradient(top, hsla(255, 255%, 255%, .95), transparent)',
-                        'animation-delay': ((i + 1) + (j + 1)) * 110 + 'ms'
-                    };
-                    var block = $('<div />').addClass('block').css(style);
-                    grid.append(block);
-                }
-            }
-        }
 
     });
 
