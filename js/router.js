@@ -32,15 +32,15 @@ define(function (require) {
 
             home: function () {
                 console.log("home route!");
-                $("html,body").addClass("overflowHidden");
+                // $("html,body").addClass("overflowHidden");
 
-                homeView.delegateEvents(); 
+                // homeView.delegateEvents(); 
                 // // delegate events when the view is recycled
                 homeView.render();
             },
 
             projects: function () {
-                $("html,body").removeClass("overflowHidden");
+                // $("html,body").removeClass("overflowHidden");
                 projectsView.delegateEvents(); 
                 // // delegate events when the view is recycled
                 projectsView.render();

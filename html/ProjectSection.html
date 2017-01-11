@@ -1,0 +1,39 @@
+<div class="row featurette">
+	<% if(id % 2){ %>
+
+		 <% if(imgURL){ %>
+		
+		<div class="col-md-7" style="text-align: center" >
+			<h1 style="margin-top: 15%"><%= title %></h1>
+			<p class="projectDesc"><%= desc %></p>
+		</div>
+		<div class="col-md-5" style="text-align: center">
+			<img data-src="<%= imgURL %>" alt="100%x280" style="width:100%" src="<%= imgURL %>">
+		</div>
+		<% } else{ %>
+		 <div class="col-md-12" style="text-align: center">
+			<h1 ><%= title %></h1>
+			<p class="projectDesc"><%= desc %></p>
+		</div>
+		<% } %>
+
+	<% } %>
+	<% if(id % 2){} else{ %>
+
+		<% if(imgURL){ %>
+		<div class="col-md-5" style="text-align: center">
+			<img data-src="<%= imgURL %>" alt="100%x280" style="width:100%" src="<%= imgURL %>">
+		</div>
+		<div class="col-md-7" style="text-align: center" >
+			<h1 style="margin-top: 15%"><%= title %></h1>
+			<p class="projectDesc"><%= desc %></p>
+		</div>
+		<% } else{ %>
+		 <div class="col-md-12" style="text-align: center">
+			<h1 ><%= title %></h1>
+			<p class="projectDesc"><%= desc %></p>
+		</div>
+		<% } %>
+	<% } %>
+</div>
+<hr>

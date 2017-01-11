@@ -4,10 +4,12 @@ require.config({
 
     paths: {
         js: '../js',
+        // json: 'json',
         // css: '../css',
         html: '../html',
         tether: 'tether',
-        d3: 'd3.v3.min'
+        d3: 'd3.v4.min',
+        data: '../data',
     },
     
     shim: {
@@ -22,7 +24,7 @@ require.config({
     }
 });
 
-require(['jquery', 'backbone', 'js/router'], function ($, Backbone, Router) {
+require(['jquery', 'backbone', 'js/router','json'], function ($, Backbone, Router) {
     var router = new Router();
     Backbone.history.start();
 });
