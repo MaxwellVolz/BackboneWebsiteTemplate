@@ -1,4 +1,7 @@
+<!-- To do -->
+<!-- git rid of major if statement used for alternating featurette layouts -->
 <div class="row featurette">
+	<!-- MAJOR IF: NEEDS REMOVAL -->
 	<% if(id % 2){ %>
 
 		 <% if(imgURL){ %>
@@ -6,6 +9,10 @@
 		<div class="col-md-7" style="text-align: center" >
 			<h1 style="margin-top: 15%"><%= title %></h1>
 			<p class="projectDesc"><%= desc %></p>
+
+			<% if(linkURL){ %>
+			<a href="<%= linkURL %>" class="btn btn-primary"><%= linkTitle %></a>
+			<% } %>
 
 		</div>
 		<div class="col-md-5" style="text-align: center">
@@ -15,11 +22,14 @@
 		 <div class="col-md-12" style="text-align: center">
 			<h1 ><%= title %></h1>
 			<p class="projectDesc"><%= desc %></p>
-
+			<% if(linkURL){ %>
+			<a href="<%= linkURL %>" class="btn btn-primary"><%= linkTitle %></a>
+			<% } %>
 		</div>
 		<% } %>
 
 	<% } %>
+	<!-- MAJOR IF: NEEDS REMOVAL -->
 	<% if(id % 2){} else{ %>
 
 		<% if(imgURL){ %>
@@ -29,11 +39,18 @@
 		<div class="col-md-7" style="text-align: center" >
 			<h1 style="margin-top: 15%"><%= title %></h1>
 			<p class="projectDesc"><%= desc %></p>
+			<% if(linkURL){ %>
+			<a href="<%= linkURL %>" class="btn btn-primary"><%= linkTitle %></a>
+			<% } %>
+
 		</div>
 		<% } else{ %>
 		 <div class="col-md-12" style="text-align: center">
 			<h1 ><%= title %></h1>
 			<p class="projectDesc"><%= desc %></p>
+			<% if(linkURL){ %>
+			<a href="<%= linkURL %>" class="btn btn-primary"><%= linkTitle %></a>
+			<% } %>
 		</div>
 		<% } %>
 	<% } %>

@@ -6,6 +6,7 @@ define(function (require) {
         Backbone = require('backbone'),
         HomeView = require('js/views/home'),
         ProjectsView   = require('js/views/projects'),
+        InOtherWordsView   = require('js/views/inOtherWords'),
 
         $body = $('body'),
         $content = $("#mainContent"),
@@ -26,6 +27,7 @@ define(function (require) {
             routes: {
                 "": "home",
                 "home": "home",
+                "iow":"inOtherWords",
                 "projects": "projects",
                 "employees/:id": "employeeDetails"
             },
@@ -50,7 +52,10 @@ define(function (require) {
                 //     var view = new ContactView({el: $content});
                 //     view.render();
                 // });
-            }
+            },
+            inOtherWords: function(){
+
+            },
 
 
 
