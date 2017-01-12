@@ -28,6 +28,10 @@ header{
 
 
 }
+
+svg#bikeSVG{
+	position:absolute;
+}
 #mainContent > section{
 /*section.jumbrotron{*/
 	background-color:transparent!important;
@@ -47,11 +51,12 @@ header{
 canvas{
 
 }
-svg{
+
+/*svg{
 	width:100%;
 	background-color:blue;
 	overflow:hidden;
-}
+}*/
 h1{
 	/*color:white!important;*/
 	font-size:4.5rem!important;

@@ -11,6 +11,7 @@ define(function (require) {
         ProjectItem           = require('../views/projectItem'),
         HTML                = require('text!html/Home.html'),
         projectsData        = require('json!data/projects.json'), 
+        // svgBike             = require('text!svg/svgBike.svg')
         template = _.template(HTML);
 
     return Backbone.View.extend({
@@ -25,6 +26,8 @@ define(function (require) {
 
             self.onResize();
             self.renderProjects();
+
+            // console.log(svgBike);
 
             if(window.innerWidth <= 600) {
                 self.rearrangeForMobile();

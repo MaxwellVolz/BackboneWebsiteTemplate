@@ -10,6 +10,7 @@ require.config({
         tether: 'tether',
         d3: 'd3.v4.min',
         data: '../data',
+        SVG: '../svg'
     },
     
     shim: {
