@@ -12,7 +12,7 @@ define(function (require) {
     return Backbone.View.extend({
 
 		render: function () {
-			console.log("rendering...");
+			// console.log("rendering...");
             this.$el.html(template(this.model));
             return this;
         }

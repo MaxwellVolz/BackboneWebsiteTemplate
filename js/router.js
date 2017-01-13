@@ -7,12 +7,16 @@ define(function (require) {
         HomeView = require('js/views/home'),
         ProjectsView   = require('js/views/projects'),
         InOtherWordsView   = require('js/views/sites/inOtherWords'),
+        FangChatView   = require('js/views/sites/fangChat'),
 
         $body = $('body'),
         $content = $("#mainContent"),
         homeView = new HomeView({el: $content}).render(),
         iowView = new InOtherWordsView({el: $content}).render(),
+        fangchatView = new FangChatView({el: $content}).render(),
         projectsView = new ProjectsView({el: $content});
+
+
 
 
         // $body.click(function () {
@@ -29,6 +33,7 @@ define(function (require) {
                 "": "home",
                 "home": "home",
                 "iow":"inOtherWords",
+                "fangchat":"fangChat",
                 "projects": "projects",
                 "employees/:id": "employeeDetails"
             },
@@ -56,8 +61,16 @@ define(function (require) {
             },
             inOtherWords: function(){
                 iowView.render();
-                $("#contentContainer").scrollTop();
+
                 console.log("inOtherWords route!");
+            },
+            fangChat: function(){
+
+                
+                fangchatView.initialize();
+                fangchatView.render();
+
+                console.log("fangChat route!");
             },
 
 

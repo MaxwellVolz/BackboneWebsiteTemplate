@@ -61,7 +61,7 @@ define(function (require) {
             var self = this;
 
              _.each(projectsData, function (project) {
-                console.log(project);
+                // console.log(project);
                 // self.$el.append(new ProjectItem({model: project}).render().el);
                 $("#supercontainer").append(new ProjectItem({model: project}).render().el);
             });

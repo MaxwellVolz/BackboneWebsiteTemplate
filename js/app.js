@@ -1,4 +1,4 @@
-require.config({
+    require.config({
 
     baseUrl: 'lib',
 
@@ -10,7 +10,15 @@ require.config({
         tether: 'tether',
         d3: 'd3.v4.min',
         data: '../data',
-        SVG: '../svg'
+        SVG: '../svg',
+
+        firebase: 'firebase',
+        backbonefire:'backbonefire',
+        FB:'facebooksdk',
+
+
+        collections: '../js/collections',
+        models: '../js/models'
     },
     
     shim: {
@@ -21,14 +29,28 @@ require.config({
         'underscore': {
             exports: '_'
         },
-        'bootstrap': ['tether','jquery']
+        'bootstrap': ['tether','jquery'],
+        // 'backbonefire': ['firebase']
+        'firebase': {
+            exports: 'firebase'
+        },
+        'FB': {
+            exports: 'FB'
+        }
     }
 });
+ 
 
-require(['jquery', 'backbone', 'js/router','json'], function ($, Backbone, Router) {
+
+            
+require(['jquery', 'backbone', 'js/router'], function ($, Backbone, Router) {
     var router = new Router();
     Backbone.history.start();
+
+    
+    console.log(".....");
 });
+
 
 // required to avoid console error caused by Tether.js not loading for Bootstrap correctly
 define(['tether.min'], function(tether) {

@@ -30,6 +30,13 @@ define(function (require) {
                 scrollTop: $("#contentContainer").offset().top
             },500);
 
+            $("#myInput").on("click",function(e){
+                $("html,body").animate({
+                    scrollTop: $("#myInput").offset().top
+                },500);
+            });
+
+
 
             $("#myInput").on("keyup",function(e){
                 self.doSearch(e);
