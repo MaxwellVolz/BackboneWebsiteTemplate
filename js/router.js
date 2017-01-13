@@ -6,11 +6,12 @@ define(function (require) {
         Backbone = require('backbone'),
         HomeView = require('js/views/home'),
         ProjectsView   = require('js/views/projects'),
-        InOtherWordsView   = require('js/views/inOtherWords'),
+        InOtherWordsView   = require('js/views/sites/inOtherWords'),
 
         $body = $('body'),
         $content = $("#mainContent"),
         homeView = new HomeView({el: $content}).render(),
+        iowView = new InOtherWordsView({el: $content}).render(),
         projectsView = new ProjectsView({el: $content});
 
 
@@ -50,11 +51,13 @@ define(function (require) {
                 console.log("projects route!");
                 // require(["app/views/Contact"], function (ContactView) {
                 //     var view = new ContactView({el: $content});
-                //     view.render();
+                    // view.render();
                 // });
             },
             inOtherWords: function(){
-
+                iowView.render();
+                $("#contentContainer").scrollTop();
+                console.log("inOtherWords route!");
             },
 
 

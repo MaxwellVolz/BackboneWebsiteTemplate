@@ -12,7 +12,7 @@
 		"id": 2,
 		"title": "In Other Words",
 		"desc": "A phrase translation web application with a user generated database. Contribute today!",
-		"tech": "JS, Google APIs",
+		"tech": "Javascript, Google APIs, HTML5, CSS3",
 		"imgURL": "images/iow.gif",
 		"linkTitle": "Try it",
 		"linkURL":"#iow"
@@ -32,8 +32,8 @@
 		"desc": "Instant browser chat. Utilizes Firebase on the backend and Angular for instant communication between devices and browsers.",
 		"tech": "",
 		"imgURL": "images/fang.gif",
-		"linkTitle": "Try it",
-		"linkURL":"#fangChat"
+		"linkTitle": "Coming Soon",
+		"linkURL":"#"
 	},
 	{
 		"id": 5,
@@ -48,7 +48,7 @@
 		"id": 6,
 		"title": "This Website!",
 		"desc": "This website is both my online portfolio and a constantly changing labor of love. Last week it was an Angular-based application...this week its BackboneJS &amp RequireJS :D",
-		"tech": "",
+		"tech": "AWS CLI,  Javascript, BackboneJS, RequireJS,S3 Buckets, Github",
 		"imgURL": "",
 		"linkTitle": "Source Code",
 		"linkURL":"https://github.com/MaxwellVolz/BackboneWebsiteTemplate"

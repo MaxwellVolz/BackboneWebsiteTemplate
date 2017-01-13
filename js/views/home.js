@@ -16,6 +16,10 @@ define(function (require) {
 
     return Backbone.View.extend({
 
+        start:function(){
+            this.render();
+        },
+
         render: function () {
             var self = this;
             self.undelegateEvents();

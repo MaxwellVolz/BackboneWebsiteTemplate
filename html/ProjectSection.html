@@ -10,6 +10,10 @@
 			<h1 style="margin-top: 15%"><%= title %></h1>
 			<p class="projectDesc"><%= desc %></p>
 
+			<% if(tech){ %>
+			<p class="text-muted techText">Tech: <%= tech %></p>
+			<% } %>
+
 			<% if(linkURL){ %>
 			<a href="<%= linkURL %>" class="btn btn-primary"><%= linkTitle %></a>
 			<% } %>
@@ -20,8 +24,14 @@
 		</div>
 		<% } else{ %>
 		 <div class="col-md-12" style="text-align: center">
+
 			<h1 ><%= title %></h1>
 			<p class="projectDesc"><%= desc %></p>
+
+			<% if(tech){ %>
+			<p class="text-muted techText">Tech: <%= tech %></p>
+			<% } %>
+
 			<% if(linkURL){ %>
 			<a href="<%= linkURL %>" class="btn btn-primary"><%= linkTitle %></a>
 			<% } %>
@@ -34,11 +44,18 @@
 
 		<% if(imgURL){ %>
 		<div class="col-md-5" style="text-align: center">
+
 			<img data-src="<%= imgURL %>" alt="100%x280" style="width:100%" src="<%= imgURL %>">
 		</div>
 		<div class="col-md-7" style="text-align: center" >
+
 			<h1 style="margin-top: 15%"><%= title %></h1>
 			<p class="projectDesc"><%= desc %></p>
+
+			<% if(tech){ %>
+			<p class="text-muted techText">Tech: <%= tech %></p>
+			<% } %>
+
 			<% if(linkURL){ %>
 			<a href="<%= linkURL %>" class="btn btn-primary"><%= linkTitle %></a>
 			<% } %>
@@ -46,8 +63,14 @@
 		</div>
 		<% } else{ %>
 		 <div class="col-md-12" style="text-align: center">
+
 			<h1 ><%= title %></h1>
 			<p class="projectDesc"><%= desc %></p>
+
+			<% if(tech){ %>
+			<p class="text-muted techText">Tech: <%= tech %></p>
+			<% } %>
+
 			<% if(linkURL){ %>
 			<a href="<%= linkURL %>" class="btn btn-primary"><%= linkTitle %></a>
 			<% } %>
