@@ -1,81 +1,32 @@
-<!-- To do -->
-<!-- git rid of major if statement used for alternating featurette layouts -->
-<div class="row featurette">
-	<!-- MAJOR IF: NEEDS REMOVAL -->
-	<% if(id % 2){ %>
 
-		 <% if(imgURL){ %>
-		
-		<div class="col-md-7" style="text-align: center" >
-			<h1 style="margin-top: 15%"><%= title %></h1>
-			<p class="projectDesc"><%= desc %></p>
+<% if(imgURL){ %>
 
-			<% if(tech){ %>
-			<p class="text-muted techText">Tech: <%= tech %></p>
-			<% } %>
+<div class="bd-highlight p-4 col-sm-12 col-md-6 col-lg-4 col-xl-3" style="text-align: left;" >
+	<img data-src="<%= imgURL %>" alt="100%x280" style="width:100%;" src="<%= imgURL %>">
+	<h1 style="margin-top: 5px"><%= title %></h1>
+	<p class="lead text-muted"><%= desc %></p>
 
-			<% if(linkURL){ %>
-			<a href="<%= linkURL %>" class="btn btn-primary"><%= linkTitle %></a>
-			<% } %>
-
-		</div>
-		<div class="col-md-5" style="text-align: center">
-			<img data-src="<%= imgURL %>" alt="100%x280" style="width:100%" src="<%= imgURL %>">
-		</div>
-		<% } else{ %>
-		 <div class="col-md-12" style="text-align: center">
-
-			<h1 ><%= title %></h1>
-			<p class="projectDesc"><%= desc %></p>
-
-			<% if(tech){ %>
-			<p class="text-muted techText">Tech: <%= tech %></p>
-			<% } %>
-
-			<% if(linkURL){ %>
-			<a href="<%= linkURL %>" class="btn btn-primary"><%= linkTitle %></a>
-			<% } %>
-		</div>
-		<% } %>
-
+	<% if(tech){ %>
+	<p class="text-muted techText">Tech: <%= tech %></p>
 	<% } %>
-	<!-- MAJOR IF: NEEDS REMOVAL -->
-	<% if(id % 2){} else{ %>
 
-		<% if(imgURL){ %>
-		<div class="col-md-5" style="text-align: center">
+	<% if(linkURL){ %>
+	<a href="<%= linkURL %>" class="btn btn-primary"><%= linkTitle %></a>
+	<% } %>
 
-			<img data-src="<%= imgURL %>" alt="100%x280" style="width:100%" src="<%= imgURL %>">
-		</div>
-		<div class="col-md-7" style="text-align: center" >
+</div>
+<% } else{ %>
+<div class="col bd-highlight p-12" style="text-align: center">
 
-			<h1 style="margin-top: 15%"><%= title %></h1>
-			<p class="projectDesc"><%= desc %></p>
+	<h1 style="margin-top: 7%"><%= title %></h1>
+	<p class="projectDesc"><%= desc %></p>
 
-			<% if(tech){ %>
-			<p class="text-muted techText">Tech: <%= tech %></p>
-			<% } %>
+	<% if(tech){ %>
+	<p class="text-muted techText">Tech: <%= tech %></p>
+	<% } %>
 
-			<% if(linkURL){ %>
-			<a href="<%= linkURL %>" class="btn btn-primary"><%= linkTitle %></a>
-			<% } %>
-
-		</div>
-		<% } else{ %>
-		 <div class="col-md-12" style="text-align: center">
-
-			<h1 ><%= title %></h1>
-			<p class="projectDesc"><%= desc %></p>
-
-			<% if(tech){ %>
-			<p class="text-muted techText">Tech: <%= tech %></p>
-			<% } %>
-
-			<% if(linkURL){ %>
-			<a href="<%= linkURL %>" class="btn btn-primary"><%= linkTitle %></a>
-			<% } %>
-		</div>
-		<% } %>
+	<% if(linkURL){ %>
+	<a href="<%= linkURL %>" class="btn btn-primary" style="margin-bottom: 20px"><%= linkTitle %></a>
 	<% } %>
 </div>
-<hr>
+<% } %>

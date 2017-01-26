@@ -30,13 +30,6 @@
             exports: '_'
         },
         'bootstrap': ['tether','jquery'],
-        // 'backbonefire': ['firebase']
-        'firebase': {
-            exports: 'firebase'
-        },
-        'FB': {
-            exports: 'FB'
-        }
     }
 });
  
@@ -47,7 +40,6 @@ require(['jquery', 'backbone', 'js/router'], function ($, Backbone, Router) {
     var router = new Router();
     Backbone.history.start();
 
-    
     console.log(".....");
 });
 

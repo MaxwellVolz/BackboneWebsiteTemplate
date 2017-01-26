@@ -7,7 +7,6 @@ define(function (require) {
         Backbone            = require('backbone'),
         tether               = require('tether'),
         bootstrap            = require('bootstrap'),
-        HTML                 = require('text!html/Projects.html'),
 
         template = _.template(HTML);
 

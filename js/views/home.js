@@ -33,21 +33,9 @@ define(function (require) {
 
             // console.log(svgBike);
 
-            if(window.innerWidth <= 600) {
-                self.rearrangeForMobile();
-            }
+
 
             return this;
-        },
-        rearrangeForMobile: function(){
-            var featureDiv = $(".featurette");
-
-            _.each(featureDiv,function(feature){
-                var col5 = $(feature).find(".col-md-5");
-
-                $(feature).find(".col-md-5").remove();
-                $(feature).prepend(col5);
-            });
         },
         onResize: function(){
             if(window.innerHeight <= 600) {
