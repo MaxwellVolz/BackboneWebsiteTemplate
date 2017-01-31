@@ -11,17 +11,48 @@ define(function (require) {
         ProjectItem           = require('../views/projectItem'),
         HTML                = require('text!html/Home.html'),
         projectsData        = require('json!data/projects.json'), 
+
+        Model               = require("models/Model"),
         // svgBike             = require('text!svg/svgBike.svg')
-        template = _.template(HTML);
+        template = _.template(HTML),
+        self;
 
     return Backbone.View.extend({
+
+        el:'#mainContent',
+
+        initialize: function(){
+            console.log("home view initialized");
+
+            console.log("model");
+
+
+
+            this.model = new Model;
+            console.log(this.model);
+
+            this.model.on("test",this.test);
+
+
+            self = this;
+
+            this.model.triggerEvent();
+
+            // this.model = new Model(){
+            //     message: "Model activited."
+            // }
+        },
+        test: function(obj) {
+
+            console.log("Just got -=" + obj.someData + "=- from my model!");
+
+        },
 
         start:function(){
             this.render();
         },
 
         render: function () {
-            var self = this;
             self.undelegateEvents();
             self.$el.html(template());
 
@@ -31,6 +62,8 @@ define(function (require) {
             self.onResize();
             self.renderProjects();
 
+            console.log(self.$el);
+
             // console.log(svgBike);
 
 
@@ -39,10 +72,10 @@ define(function (require) {
         },
         onResize: function(){
             if(window.innerHeight <= 600) {
-                $("#homeContainer").css("padding","4rem 0");
+                self.$el.find("#homeContainer").css("padding","4rem 0");
             }
             else{
-                $("#homeContainer").css("padding","12rem 0 2rem");
+                self.$el.find("#homeContainer").css("padding","12rem 0 2rem");
             }
         },
         renderProjects: function(){
@@ -51,7 +84,7 @@ define(function (require) {
              _.each(projectsData, function (project) {
                 // console.log(project);
                 // self.$el.append(new ProjectItem({model: project}).render().el);
-                $("#supercontainer").append(new ProjectItem({model: project}).render().el);
+                self.$el.find("#supercontainer").append(new ProjectItem({model: project}).render().el);
             });
 
         },

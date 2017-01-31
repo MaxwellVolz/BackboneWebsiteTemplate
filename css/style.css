@@ -75,7 +75,7 @@ svg#bikeSVG{
 	background: linear-gradient(270deg, #003056, #04518C, #00A1D9, #47D9BF, #F2D03B);
 	/*background: linear-gradient(270deg, #004358, #1f8a70, #bedb39, #ffe11a, #fd7400);*/
 	background-size: 1000% 1000%;
-	height:96vh;
+	height:100vh;
 	-webkit-animation: AnimationName 30s ease infinite;
 	animation: AnimationName 30s ease infinite;
 

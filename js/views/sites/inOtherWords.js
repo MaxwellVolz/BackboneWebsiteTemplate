@@ -15,6 +15,9 @@ define(function (require) {
         template = _.template(HTML);
 
     return Backbone.View.extend({
+        el:'#mainContent',
+
+        
         render: function () {
             var self = this;
             self.undelegateEvents();

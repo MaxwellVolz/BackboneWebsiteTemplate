@@ -12,11 +12,6 @@
         data: '../data',
         SVG: '../svg',
 
-        firebase: 'firebase',
-        backbonefire:'backbonefire',
-        FB:'facebooksdk',
-
-
         collections: '../js/collections',
         models: '../js/models'
     },

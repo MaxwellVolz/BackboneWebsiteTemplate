@@ -10,8 +10,8 @@ define(function (require) {
 
         $body = $('body'),
         $content = $("#mainContent"),
-        homeView = new HomeView({el: $content}).render(),
-        iowView = new InOtherWordsView({el: $content}).render();
+        homeView = new HomeView(),
+        iowView = new InOtherWordsView();
         // fangchatView = new FangChatView({el: $content}).render(),
 
 
@@ -36,9 +36,9 @@ define(function (require) {
             },
 
             inOtherWords: function(){
+                console.log("inOtherWords route!");
                 iowView.render();
 
-                console.log("inOtherWords route!");
             },
             // fangChat: function(){
 
