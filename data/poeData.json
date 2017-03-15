@@ -1,0 +1,1861 @@
+{
+  "total": 15000,
+  "entries": [
+    {
+      "rank": 1,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "EthanTupperware",
+        "level": 100,
+        "class": "Raider",
+        "experience": 4250334444
+      },
+      "account": {
+        "name": "Etup",
+        "challenges": {
+          "total": 22
+        },
+        "twitch": {
+          "name": "etup"
+        }
+      }
+    },
+    {
+      "rank": 2,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "Odangler",
+        "level": 99,
+        "class": "Necromancer",
+        "experience": 4177179668
+      },
+      "account": {
+        "name": "odang",
+        "challenges": {
+          "total": 15
+        }
+      }
+    },
+    {
+      "rank": 3,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "Surplus_Got_Gorged",
+        "level": 98,
+        "class": "Necromancer",
+        "experience": 3867010642
+      },
+      "account": {
+        "name": "_Surplus_",
+        "challenges": {
+          "total": 19
+        }
+      }
+    },
+    {
+      "rank": 4,
+      "dead": true,
+      "online": false,
+      "character": {
+        "name": "GodGenji",
+        "level": 98,
+        "class": "Inquisitor",
+        "experience": 3837839444
+      },
+      "account": {
+        "name": "BirdWings",
+        "challenges": {
+          "total": 18
+        }
+      }
+    },
+    {
+      "rank": 5,
+      "dead": true,
+      "online": false,
+      "character": {
+        "name": "WhiteBreadSparrog",
+        "level": 98,
+        "class": "Slayer",
+        "experience": 3799480772
+      },
+      "account": {
+        "name": "Sparrog",
+        "challenges": {
+          "total": 16
+        }
+      }
+    },
+    {
+      "rank": 6,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "AdvanceSplit",
+        "level": 98,
+        "class": "Assassin",
+        "experience": 3792691077
+      },
+      "account": {
+        "name": "ad1ce",
+        "challenges": {
+          "total": 16
+        },
+        "twitch": {
+          "name": "ad1ce"
+        }
+      }
+    },
+    {
+      "rank": 7,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "Visosal_ladder",
+        "level": 98,
+        "class": "Elementalist",
+        "experience": 3766813841
+      },
+      "account": {
+        "name": "NoLifeGrind_Pela",
+        "challenges": {
+          "total": 17
+        },
+        "twitch": {
+          "name": "pe1a"
+        }
+      }
+    },
+    {
+      "rank": 8,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "Minerva",
+        "level": 98,
+        "class": "Elementalist",
+        "experience": 3759113836
+      },
+      "account": {
+        "name": "StupidFatHobbit",
+        "challenges": {
+          "total": 21
+        },
+        "twitch": {
+          "name": "sfhobbit"
+        }
+      }
+    },
+    {
+      "rank": 9,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "MoodFanGay",
+        "level": 98,
+        "class": "Pathfinder",
+        "experience": 3712828951
+      },
+      "account": {
+        "name": "moodzy",
+        "challenges": {
+          "total": 18
+        },
+        "twitch": {
+          "name": "misunderstood_mood"
+        }
+      }
+    },
+    {
+      "rank": 10,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "Stone_Colds_Nicebuild",
+        "level": 98,
+        "class": "Assassin",
+        "experience": 3688211389
+      },
+      "account": {
+        "name": "SteveAustin",
+        "challenges": {
+          "total": 18
+        },
+        "twitch": {
+          "name": "sergodzam"
+        }
+      }
+    },
+    {
+      "rank": 11,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "AdrianPISSS",
+        "level": 98,
+        "class": "Pathfinder",
+        "experience": 3682571878
+      },
+      "account": {
+        "name": "adrinatoren",
+        "challenges": {
+          "total": 17
+        },
+        "twitch": {
+          "name": "adrinatoren"
+        }
+      }
+    },
+    {
+      "rank": 12,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "BeansBigBoyBeans",
+        "level": 98,
+        "class": "Raider",
+        "experience": 3678752388
+      },
+      "account": {
+        "name": "johnbeans",
+        "challenges": {
+          "total": 17
+        }
+      }
+    },
+    {
+      "rank": 13,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "SlowFolkStoleYoGirl",
+        "level": 98,
+        "class": "Elementalist",
+        "experience": 3665020846
+      },
+      "account": {
+        "name": "nickyadaya",
+        "challenges": {
+          "total": 21
+        },
+        "twitch": {
+          "name": "nickyadaya"
+        }
+      }
+    },
+    {
+      "rank": 14,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "DamageDaisy",
+        "level": 97,
+        "class": "Elementalist",
+        "experience": 3584093435
+      },
+      "account": {
+        "name": "Creaper1337",
+        "challenges": {
+          "total": 18
+        }
+      }
+    },
+    {
+      "rank": 15,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "AuraAgnes",
+        "level": 97,
+        "class": "Necromancer",
+        "experience": 3582290289
+      },
+      "account": {
+        "name": "Xotuz",
+        "challenges": {
+          "total": 18
+        }
+      }
+    },
+    {
+      "rank": 16,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "NugiyenBackToTheRoots",
+        "level": 97,
+        "class": "Pathfinder",
+        "experience": 3516601068
+      },
+      "account": {
+        "name": "nugiyen",
+        "challenges": {
+          "total": 22
+        },
+        "twitch": {
+          "name": "nugiyen"
+        }
+      }
+    },
+    {
+      "rank": 17,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "Bear_topfifty",
+        "level": 97,
+        "class": "Necromancer",
+        "experience": 3426473822
+      },
+      "account": {
+        "name": "dwhy121",
+        "challenges": {
+          "total": 20
+        },
+        "twitch": {
+          "name": "viciousdwh"
+        }
+      }
+    },
+    {
+      "rank": 18,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "AnafobiaLL",
+        "level": 97,
+        "class": "Necromancer",
+        "experience": 3401141476
+      },
+      "account": {
+        "name": "Anafobia",
+        "challenges": {
+          "total": 29
+        },
+        "twitch": {
+          "name": "anafobia"
+        }
+      }
+    },
+    {
+      "rank": 19,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "NoPantsFreezeDong",
+        "level": 97,
+        "class": "Inquisitor",
+        "experience": 3381270991
+      },
+      "account": {
+        "name": "Reyonlol",
+        "challenges": {
+          "total": 28
+        },
+        "twitch": {
+          "name": "reyontv"
+        }
+      }
+    },
+    {
+      "rank": 20,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "SheIsLostControlAgain",
+        "level": 97,
+        "class": "Assassin",
+        "experience": 3378996368
+      },
+      "account": {
+        "name": "Nucl3ar_",
+        "challenges": {
+          "total": 26
+        },
+        "twitch": {
+          "name": "follownucl3ar"
+        }
+      }
+    },
+    {
+      "rank": 21,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "ThirteenAuramancer",
+        "level": 97,
+        "class": "Necromancer",
+        "experience": 3365723036
+      },
+      "account": {
+        "name": "dellaint",
+        "challenges": {
+          "total": 10
+        }
+      }
+    },
+    {
+      "rank": 22,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "YoloNou_RNGesus_",
+        "level": 96,
+        "class": "Elementalist",
+        "experience": 3331335785
+      },
+      "account": {
+        "name": "minaBLe78",
+        "challenges": {
+          "total": 18
+        },
+        "twitch": {
+          "name": "yolonou"
+        }
+      }
+    },
+    {
+      "rank": 23,
+      "dead": true,
+      "online": false,
+      "character": {
+        "name": "ThatsADragoniteXD",
+        "level": 96,
+        "class": "Pathfinder",
+        "experience": 3292254760
+      },
+      "account": {
+        "name": "supercellj",
+        "challenges": {
+          "total": 18
+        }
+      }
+    },
+    {
+      "rank": 24,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "old_wrinkly_scrotums",
+        "level": 96,
+        "class": "Inquisitor",
+        "experience": 3288214456
+      },
+      "account": {
+        "name": "Eugene_",
+        "challenges": {
+          "total": 20
+        },
+        "twitch": {
+          "name": "scythe191"
+        }
+      }
+    },
+    {
+      "rank": 25,
+      "dead": true,
+      "online": false,
+      "character": {
+        "name": "BooshikaCoastinTmudflat",
+        "level": 96,
+        "class": "Chieftain",
+        "experience": 3274212756
+      },
+      "account": {
+        "name": "Booshika",
+        "challenges": {
+          "total": 19
+        },
+        "twitch": {
+          "name": "boosheeka"
+        }
+      }
+    },
+    {
+      "rank": 26,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "ZheniaDef",
+        "level": 96,
+        "class": "Guardian",
+        "experience": 3273537650
+      },
+      "account": {
+        "name": "EvgenicaS",
+        "challenges": {
+          "total": 20
+        }
+      }
+    },
+    {
+      "rank": 27,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "Alkaizer",
+        "level": 96,
+        "class": "Gladiator",
+        "experience": 3271874806
+      },
+      "account": {
+        "name": "AlkaizerX",
+        "challenges": {
+          "total": 15
+        }
+      }
+    },
+    {
+      "rank": 28,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "JDNeverHundred",
+        "level": 96,
+        "class": "Inquisitor",
+        "experience": 3265968491
+      },
+      "account": {
+        "name": "JD__",
+        "challenges": {
+          "total": 21
+        }
+      }
+    },
+    {
+      "rank": 29,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "ShaperViibal",
+        "level": 96,
+        "class": "Elementalist",
+        "experience": 3264019230
+      },
+      "account": {
+        "name": "nokieka2",
+        "challenges": {
+          "total": 21
+        },
+        "twitch": {
+          "name": "nokieka"
+        }
+      }
+    },
+    {
+      "rank": 30,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "BoBo_EthicalGaymer",
+        "level": 96,
+        "class": "Inquisitor",
+        "experience": 3253089274
+      },
+      "account": {
+        "name": "BoBoTheCasual",
+        "challenges": {
+          "total": 18
+        },
+        "twitch": {
+          "name": "sayboboplz"
+        }
+      }
+    },
+    {
+      "rank": 31,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "hardcoreonvaikee",
+        "level": 96,
+        "class": "Elementalist",
+        "experience": 3206979453
+      },
+      "account": {
+        "name": "sifla",
+        "challenges": {
+          "total": 20
+        }
+      }
+    },
+    {
+      "rank": 32,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "Zatramix_Ethical",
+        "level": 96,
+        "class": "Slayer",
+        "experience": 3206952990
+      },
+      "account": {
+        "name": "Zatramix",
+        "challenges": {
+          "total": 16
+        }
+      }
+    },
+    {
+      "rank": 33,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "FearSupportsAgain",
+        "level": 96,
+        "class": "Necromancer",
+        "experience": 3201964743
+      },
+      "account": {
+        "name": "Fearmonger",
+        "challenges": {
+          "total": 15
+        },
+        "twitch": {
+          "name": "aggixx"
+        }
+      }
+    },
+    {
+      "rank": 34,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "unholylegacy",
+        "level": 96,
+        "class": "Elementalist",
+        "experience": 3195365750
+      },
+      "account": {
+        "name": "ekunholy",
+        "challenges": {
+          "total": 30
+        },
+        "twitch": {
+          "name": "ekunholy"
+        }
+      }
+    },
+    {
+      "rank": 35,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "Zuki_TheKingOfPepiks",
+        "level": 96,
+        "class": "Guardian",
+        "experience": 3188985004
+      },
+      "account": {
+        "name": "Zuki_CZ",
+        "challenges": {
+          "total": 18
+        },
+        "twitch": {
+          "name": "zuki_cz"
+        }
+      }
+    },
+    {
+      "rank": 36,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "BRBDELETINGLOGOUTAHK",
+        "level": 96,
+        "class": "Assassin",
+        "experience": 3173532039
+      },
+      "account": {
+        "name": "Mnstrr",
+        "challenges": {
+          "total": 25
+        }
+      }
+    },
+    {
+      "rank": 37,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "LegacyBrkstR",
+        "level": 96,
+        "class": "Elementalist",
+        "experience": 3150171115
+      },
+      "account": {
+        "name": "BrkstR",
+        "challenges": {
+          "total": 34
+        },
+        "twitch": {
+          "name": "brkstr"
+        }
+      }
+    },
+    {
+      "rank": 38,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "PawsPlaysWithFire",
+        "level": 96,
+        "class": "Elementalist",
+        "experience": 3148283506
+      },
+      "account": {
+        "name": "Kisaryn",
+        "challenges": {
+          "total": 15
+        },
+        "twitch": {
+          "name": "pressstarttopaws"
+        }
+      }
+    },
+    {
+      "rank": 39,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "Droppa_legacy",
+        "level": 96,
+        "class": "Necromancer",
+        "experience": 3134830015
+      },
+      "account": {
+        "name": "droppagrogan",
+        "challenges": {
+          "total": 14
+        }
+      }
+    },
+    {
+      "rank": 40,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "NovaPolice",
+        "level": 96,
+        "class": "Raider",
+        "experience": 3129617367
+      },
+      "account": {
+        "name": "chromengel",
+        "challenges": {
+          "total": 26
+        }
+      }
+    },
+    {
+      "rank": 41,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "MatZ_Still_Team_Player",
+        "level": 96,
+        "class": "Necromancer",
+        "experience": 3124962565
+      },
+      "account": {
+        "name": "MatZimoto",
+        "challenges": {
+          "total": 17
+        }
+      }
+    },
+    {
+      "rank": 42,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "EmilyGreyLegacySupport",
+        "level": 96,
+        "class": "Necromancer",
+        "experience": 3123780964
+      },
+      "account": {
+        "name": "ruzga",
+        "challenges": {
+          "total": 11
+        }
+      }
+    },
+    {
+      "rank": 43,
+      "dead": true,
+      "online": false,
+      "character": {
+        "name": "Paraspective_nicecrash",
+        "level": 96,
+        "class": "Elementalist",
+        "experience": 3115289244
+      },
+      "account": {
+        "name": "Paraspective",
+        "challenges": {
+          "total": 19
+        },
+        "twitch": {
+          "name": "paraspective"
+        }
+      }
+    },
+    {
+      "rank": 44,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "thegibupwasntpermanent",
+        "level": 96,
+        "class": "Necromancer",
+        "experience": 3112377080
+      },
+      "account": {
+        "name": "pdive",
+        "challenges": {
+          "total": 14
+        }
+      }
+    },
+    {
+      "rank": 45,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "dime",
+        "level": 96,
+        "class": "Raider",
+        "experience": 3112090438
+      },
+      "account": {
+        "name": "dime",
+        "challenges": {
+          "total": 24
+        },
+        "twitch": {
+          "name": "pairdime"
+        }
+      }
+    },
+    {
+      "rank": 46,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "sNasdmi",
+        "level": 95,
+        "class": "Occultist",
+        "experience": 3109452720
+      },
+      "account": {
+        "name": "Nasdmi",
+        "challenges": {
+          "total": 27
+        },
+        "twitch": {
+          "name": "nasdmi"
+        }
+      }
+    },
+    {
+      "rank": 47,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "Rain_perished",
+        "level": 95,
+        "class": "Necromancer",
+        "experience": 3105600288
+      },
+      "account": {
+        "name": "Horden",
+        "challenges": {
+          "total": 18
+        }
+      }
+    },
+    {
+      "rank": 48,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "GotoFiLs",
+        "level": 95,
+        "class": "Inquisitor",
+        "experience": 3103737138
+      },
+      "account": {
+        "name": "ChinaFarmer2",
+        "challenges": {
+          "total": 16
+        },
+        "twitch": {
+          "name": "gotofil"
+        }
+      }
+    },
+    {
+      "rank": 49,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "JztxD",
+        "level": 95,
+        "class": "Chieftain",
+        "experience": 3090278017
+      },
+      "account": {
+        "name": "Jzfine",
+        "challenges": {
+          "total": 19
+        }
+      }
+    },
+    {
+      "rank": 50,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "Gun_Burn",
+        "level": 95,
+        "class": "Elementalist",
+        "experience": 3089176547
+      },
+      "account": {
+        "name": "GunCrazy420",
+        "challenges": {
+          "total": 17
+        }
+      }
+    },
+    {
+      "rank": 51,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "Aaeyu",
+        "level": 95,
+        "class": "Necromancer",
+        "experience": 3080538306
+      },
+      "account": {
+        "name": "Loboshtiash",
+        "challenges": {
+          "total": 35
+        },
+        "twitch": {
+          "name": "lobonija"
+        }
+      }
+    },
+    {
+      "rank": 52,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "witch_best_girl",
+        "level": 95,
+        "class": "Necromancer",
+        "experience": 3056677857
+      },
+      "account": {
+        "name": "muuey",
+        "challenges": {
+          "total": 20
+        }
+      }
+    },
+    {
+      "rank": 53,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "Skrlliex_Leagacy_",
+        "level": 95,
+        "class": "Pathfinder",
+        "experience": 3050610092
+      },
+      "account": {
+        "name": "Skrlllex",
+        "challenges": {
+          "total": 18
+        },
+        "twitch": {
+          "name": "skrlliex"
+        }
+      }
+    },
+    {
+      "rank": 54,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "VolatileMagnet",
+        "level": 95,
+        "class": "Slayer",
+        "experience": 3039910893
+      },
+      "account": {
+        "name": "Ukkoclap",
+        "challenges": {
+          "total": 19
+        },
+        "twitch": {
+          "name": "schiltgaming"
+        }
+      }
+    },
+    {
+      "rank": 55,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "HOOKxxx",
+        "level": 95,
+        "class": "Necromancer",
+        "experience": 3037481143
+      },
+      "account": {
+        "name": "h00k_",
+        "challenges": {
+          "total": 15
+        }
+      }
+    },
+    {
+      "rank": 56,
+      "dead": true,
+      "online": false,
+      "character": {
+        "name": "GRANDYsSnakesSLITHERS",
+        "level": 95,
+        "class": "Necromancer",
+        "experience": 3029142938
+      },
+      "account": {
+        "name": "GRANDY",
+        "challenges": {
+          "total": 18
+        }
+      }
+    },
+    {
+      "rank": 57,
+      "dead": true,
+      "online": false,
+      "character": {
+        "name": "Casual_Kaps",
+        "level": 95,
+        "class": "Inquisitor",
+        "experience": 3023016744
+      },
+      "account": {
+        "name": "Erne113",
+        "challenges": {
+          "total": 24
+        },
+        "twitch": {
+          "name": "kaps_poe"
+        }
+      }
+    },
+    {
+      "rank": 58,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "PROFFESIONAL_GIRL_GAMER",
+        "level": 95,
+        "class": "Elementalist",
+        "experience": 3017168044
+      },
+      "account": {
+        "name": "CUTE_ASIAN_GAMER_GIRL",
+        "challenges": {
+          "total": 19
+        }
+      }
+    },
+    {
+      "rank": 59,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "Call_Me_Salade",
+        "level": 95,
+        "class": "Raider",
+        "experience": 3016208845
+      },
+      "account": {
+        "name": "amnesia2935",
+        "challenges": {
+          "total": 15
+        }
+      }
+    },
+    {
+      "rank": 60,
+      "dead": true,
+      "online": false,
+      "character": {
+        "name": "Faxrae",
+        "level": 95,
+        "class": "Necromancer",
+        "experience": 3013926585
+      },
+      "account": {
+        "name": "LuriFaXx",
+        "challenges": {
+          "total": 27
+        }
+      }
+    },
+    {
+      "rank": 61,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "MJECZYSLAW",
+        "level": 95,
+        "class": "Necromancer",
+        "experience": 3010871467
+      },
+      "account": {
+        "name": "Sepsiak",
+        "challenges": {
+          "total": 20
+        }
+      }
+    },
+    {
+      "rank": 62,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "____SHEEP____",
+        "level": 95,
+        "class": "Inquisitor",
+        "experience": 3009824467
+      },
+      "account": {
+        "name": "poz77",
+        "challenges": {
+          "total": 18
+        }
+      }
+    },
+    {
+      "rank": 63,
+      "dead": true,
+      "online": false,
+      "character": {
+        "name": "ZizaranTeamTeam",
+        "level": 95,
+        "class": "Inquisitor",
+        "experience": 3005200873
+      },
+      "account": {
+        "name": "Zizaran",
+        "challenges": {
+          "total": 17
+        },
+        "twitch": {
+          "name": "zizaran"
+        }
+      }
+    },
+    {
+      "rank": 64,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "Echo_DoingItAgain",
+        "level": 95,
+        "class": "Necromancer",
+        "experience": 2998575791
+      },
+      "account": {
+        "name": "IEONE",
+        "challenges": {
+          "total": 15
+        },
+        "twitch": {
+          "name": "ieone_echo"
+        }
+      }
+    },
+    {
+      "rank": 65,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "ZASHKVARKER",
+        "level": 95,
+        "class": "Slayer",
+        "experience": 2981908047
+      },
+      "account": {
+        "name": "Barrakud",
+        "challenges": {
+          "total": 17
+        }
+      }
+    },
+    {
+      "rank": 66,
+      "dead": true,
+      "online": false,
+      "character": {
+        "name": "MingPongLee",
+        "level": 95,
+        "class": "Pathfinder",
+        "experience": 2980633879
+      },
+      "account": {
+        "name": "kaitozhao",
+        "challenges": {
+          "total": 17
+        }
+      }
+    },
+    {
+      "rank": 67,
+      "dead": true,
+      "online": false,
+      "character": {
+        "name": "Thisgameneverlags",
+        "level": 95,
+        "class": "Occultist",
+        "experience": 2979497872
+      },
+      "account": {
+        "name": "vasan",
+        "challenges": {
+          "total": 20
+        },
+        "twitch": {
+          "name": "vasan192"
+        }
+      }
+    },
+    {
+      "rank": 68,
+      "dead": true,
+      "online": false,
+      "character": {
+        "name": "ProLifts",
+        "level": 95,
+        "class": "Inquisitor",
+        "experience": 2977943566
+      },
+      "account": {
+        "name": "BrandonMU",
+        "challenges": {
+          "total": 19
+        }
+      }
+    },
+    {
+      "rank": 69,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "Grutzzrf",
+        "level": 95,
+        "class": "Guardian",
+        "experience": 2973605299
+      },
+      "account": {
+        "name": "Yasselholf",
+        "challenges": {
+          "total": 17
+        },
+        "twitch": {
+          "name": "murderbufo"
+        }
+      }
+    },
+    {
+      "rank": 70,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "CeptenZorro",
+        "level": 95,
+        "class": "Raider",
+        "experience": 2973201693
+      },
+      "account": {
+        "name": "seecad",
+        "challenges": {
+          "total": 13
+        }
+      }
+    },
+    {
+      "rank": 71,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "hellleaguelegacy",
+        "level": 95,
+        "class": "Gladiator",
+        "experience": 2972503970
+      },
+      "account": {
+        "name": "skyp767",
+        "challenges": {
+          "total": 20
+        },
+        "twitch": {
+          "name": "profy113"
+        }
+      }
+    },
+    {
+      "rank": 72,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "RighteousNerd",
+        "level": 95,
+        "class": "Juggernaut",
+        "experience": 2968235665
+      },
+      "account": {
+        "name": "Nerdicide",
+        "challenges": {
+          "total": 16
+        }
+      }
+    },
+    {
+      "rank": 73,
+      "dead": true,
+      "online": false,
+      "character": {
+        "name": "white_poison",
+        "level": 95,
+        "class": "Necromancer",
+        "experience": 2953475153
+      },
+      "account": {
+        "name": "all_i_want",
+        "challenges": {
+          "total": 14
+        }
+      }
+    },
+    {
+      "rank": 74,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "Magikarp",
+        "level": 95,
+        "class": "Inquisitor",
+        "experience": 2945820234
+      },
+      "account": {
+        "name": "Hyperbeam",
+        "challenges": {
+          "total": 24
+        }
+      }
+    },
+    {
+      "rank": 75,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "Kvipsy_NeverScared",
+        "level": 95,
+        "class": "Necromancer",
+        "experience": 2943374445
+      },
+      "account": {
+        "name": "A_Kvipsy",
+        "challenges": {
+          "total": 21
+        },
+        "twitch": {
+          "name": "kvipsy"
+        }
+      }
+    },
+    {
+      "rank": 76,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "thioukd",
+        "level": 95,
+        "class": "Elementalist",
+        "experience": 2937399214
+      },
+      "account": {
+        "name": "thiouk",
+        "challenges": {
+          "total": 18
+        }
+      }
+    },
+    {
+      "rank": 77,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "MrDONKS_TwitchTV",
+        "level": 95,
+        "class": "Gladiator",
+        "experience": 2935634896
+      },
+      "account": {
+        "name": "roguesbl00d",
+        "challenges": {
+          "total": 19
+        },
+        "twitch": {
+          "name": "mrdonks"
+        }
+      }
+    },
+    {
+      "rank": 78,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "eLguL",
+        "level": 95,
+        "class": "Berserker",
+        "experience": 2928927035
+      },
+      "account": {
+        "name": "Elgul",
+        "challenges": {
+          "total": 26
+        },
+        "twitch": {
+          "name": "elgul"
+        }
+      }
+    },
+    {
+      "rank": 79,
+      "dead": true,
+      "online": false,
+      "character": {
+        "name": "Magnosaurus",
+        "level": 95,
+        "class": "Inquisitor",
+        "experience": 2922876890
+      },
+      "account": {
+        "name": "darkfalldoon",
+        "challenges": {
+          "total": 16
+        }
+      }
+    },
+    {
+      "rank": 80,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "betaLOLXDSORANDOM",
+        "level": 95,
+        "class": "Necromancer",
+        "experience": 2922100324
+      },
+      "account": {
+        "name": "Betachief",
+        "challenges": {
+          "total": 16
+        },
+        "twitch": {
+          "name": "betachief"
+        }
+      }
+    },
+    {
+      "rank": 81,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "RadX_legacy",
+        "level": 95,
+        "class": "Trickster",
+        "experience": 2921302443
+      },
+      "account": {
+        "name": "RadX.work",
+        "challenges": {
+          "total": 30
+        },
+        "twitch": {
+          "name": "radx2"
+        }
+      }
+    },
+    {
+      "rank": 82,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "InTheDirtRealQuick",
+        "level": 95,
+        "class": "Necromancer",
+        "experience": 2914883100
+      },
+      "account": {
+        "name": "Falros",
+        "challenges": {
+          "total": 15
+        }
+      }
+    },
+    {
+      "rank": 83,
+      "dead": true,
+      "online": false,
+      "character": {
+        "name": "CLGWORLDCHAMPS",
+        "level": 95,
+        "class": "Raider",
+        "experience": 2898310931
+      },
+      "account": {
+        "name": "takee",
+        "challenges": {
+          "total": 19
+        },
+        "twitch": {
+          "name": "takeeeez"
+        }
+      }
+    },
+    {
+      "rank": 84,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "BaneGrill",
+        "level": 95,
+        "class": "Necromancer",
+        "experience": 2896469879
+      },
+      "account": {
+        "name": "BaneBoy1996",
+        "challenges": {
+          "total": 18
+        },
+        "twitch": {
+          "name": "baneboy"
+        }
+      }
+    },
+    {
+      "rank": 85,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "DsfarbarFFFFFFFFFFFFFF",
+        "level": 95,
+        "class": "Elementalist",
+        "experience": 2895361140
+      },
+      "account": {
+        "name": "Dsfarblarwaggle",
+        "challenges": {
+          "total": 20
+        },
+        "twitch": {
+          "name": "waggle"
+        }
+      }
+    },
+    {
+      "rank": 86,
+      "dead": true,
+      "online": false,
+      "character": {
+        "name": "Aw_Skeet_Skeet_Skeet",
+        "level": 95,
+        "class": "Pathfinder",
+        "experience": 2893093824
+      },
+      "account": {
+        "name": "Testiculon",
+        "challenges": {
+          "total": 19
+        },
+        "twitch": {
+          "name": "idiotwithcomputer"
+        }
+      }
+    },
+    {
+      "rank": 87,
+      "dead": true,
+      "online": false,
+      "character": {
+        "name": "Max_Legacy",
+        "level": 95,
+        "class": "Slayer",
+        "experience": 2887748041
+      },
+      "account": {
+        "name": "MaxHaxx",
+        "challenges": {
+          "total": 27
+        }
+      }
+    },
+    {
+      "rank": 88,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "SladkayaSiren",
+        "level": 95,
+        "class": "Hierophant",
+        "experience": 2887281823
+      },
+      "account": {
+        "name": "TheHardest",
+        "challenges": {
+          "total": 15
+        }
+      }
+    },
+    {
+      "rank": 89,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "BrakPotkiNaBleeda",
+        "level": 95,
+        "class": "Elementalist",
+        "experience": 2886807748
+      },
+      "account": {
+        "name": "beastzzek",
+        "challenges": {
+          "total": 19
+        }
+      }
+    },
+    {
+      "rank": 90,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "DeadExaltFairy",
+        "level": 95,
+        "class": "Guardian",
+        "experience": 2886505227
+      },
+      "account": {
+        "name": "imfckindead",
+        "challenges": {
+          "total": 13
+        }
+      }
+    },
+    {
+      "rank": 91,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "BalanceREEEEEEEEEEEEEEE",
+        "level": 95,
+        "class": "Assassin",
+        "experience": 2885540677
+      },
+      "account": {
+        "name": "ElHefeGrandiosos",
+        "challenges": {
+          "total": 22
+        }
+      }
+    },
+    {
+      "rank": 92,
+      "dead": false,
+      "online": true,
+      "character": {
+        "name": "HUNK_Nerfreverser",
+        "level": 95,
+        "class": "Champion",
+        "experience": 2884998316
+      },
+      "account": {
+        "name": "HUNKTHEMAN",
+        "challenges": {
+          "total": 16
+        },
+        "twitch": {
+          "name": "fear0hunk"
+        }
+      }
+    },
+    {
+      "rank": 93,
+      "dead": true,
+      "online": false,
+      "character": {
+        "name": "ASlmdJKPQPERTWELASDLlsa",
+        "level": 95,
+        "class": "Necromancer",
+        "experience": 2881598297
+      },
+      "account": {
+        "name": "eMbbuZomg",
+        "challenges": {
+          "total": 25
+        },
+        "twitch": {
+          "name": "embbuzomg"
+        }
+      }
+    },
+    {
+      "rank": 94,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "SortyLHC",
+        "level": 95,
+        "class": "Champion",
+        "experience": 2880291068
+      },
+      "account": {
+        "name": "sortylol",
+        "challenges": {
+          "total": 16
+        },
+        "twitch": {
+          "name": "sorciak"
+        }
+      }
+    },
+    {
+      "rank": 95,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "MorsFirstedFirst",
+        "level": 95,
+        "class": "Necromancer",
+        "experience": 2880231202
+      },
+      "account": {
+        "name": "Morsexier",
+        "challenges": {
+          "total": 22
+        },
+        "twitch": {
+          "name": "morsrageng"
+        }
+      }
+    },
+    {
+      "rank": 96,
+      "dead": true,
+      "online": false,
+      "character": {
+        "name": "Tasty__supporter",
+        "level": 95,
+        "class": "Necromancer",
+        "experience": 2879030753
+      },
+      "account": {
+        "name": "kemal007",
+        "challenges": {
+          "total": 18
+        }
+      }
+    },
+    {
+      "rank": 97,
+      "dead": false,
+      "online": false,
+      "character": {
+        "name": "MoyoGeyser",
+        "level": 95,
+        "class": "Gladiator",
+        "experience": 2876297090
+      },
+      "account": {
+        "name": "Moyomoto",
+        "challenges": {
+          "total": 22
+        }
+      }
+    },
+    {
+      "rank": 98,
+      "dead": true,
+      "online": false,
+      "character": {
+        "name": "Essentricveryfgt",
+        "level": 95,
+        "class": "Inquisitor",
+        "experience": 2876116901
+      },
+      "account": {
+        "name": "koceto66",
+        "challenges": {
+          "total": 17
+        },
+        "twitch": {
+          "name": "eccentricdb"
+        }
+      }
+    },
+    {
+      "rank": 99,
+      "dead": true,
+      "online": false,
+      "character": {
+        "name": "SIIS_JOO_JOO",
+        "level": 95,
+        "class": "Inquisitor",
+        "experience": 2876116901
+      },
+      "account": {
+        "name": "KawaiiLoli",
+        "challenges": {
+          "total": 17
+        },
+        "twitch": {
+          "name": "kaunis_ajatus"
+        }
+      }
+    },
+    {
+      "rank": 100,
+      "dead": true,
+      "online": false,
+      "character": {
+        "name": "BearsSiegeDreams",
+        "level": 95,
+        "class": "Necromancer",
+        "experience": 2876116901
+      },
+      "account": {
+        "name": "CmdNuppu",
+        "challenges": {
+          "total": 25
+        },
+        "twitch": {
+          "name": "bearcounter"
+        }
+      }
+    }
+  ]
+}

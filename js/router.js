@@ -6,11 +6,13 @@ define(function (require) {
         Backbone = require('backbone'),
         HomeView = require('js/views/home'),
         InOtherWordsView   = require('js/views/sites/inOtherWords'),
+        PoeLadderView  = require('js/views/sites/PoeLadder'),
         // FangChatView   = require('js/views/sites/fangChat'),
 
         $body = $('body'),
         $content = $("#mainContent"),
         homeView = new HomeView(),
+        poeLadderView = new PoeLadderView(),
         iowView = new InOtherWordsView();
         // fangchatView = new FangChatView({el: $content}).render(),
 
@@ -21,6 +23,7 @@ define(function (require) {
                 "": "home",
                 "home": "home",
                 "iow":"inOtherWords",
+                "poe":"PoeLadder",
                 "fangchat":"fangChat",
                 "projects": "projects",
                 "employees/:id": "employeeDetails"
@@ -40,6 +43,9 @@ define(function (require) {
                 iowView.render();
 
             },
+            PoeLadder: function(){
+                poeLadderView.render();
+            }
             // fangChat: function(){
 
                 

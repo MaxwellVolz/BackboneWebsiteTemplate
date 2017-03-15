@@ -1,8 +1,9 @@
 [
+	
 	{
 		"id": 1,
-		"title": "HotFreshGames.com",
-		"desc": "Showcase website for my recent game development. Includes a download link to the exciting new BlokDodge Alpha!",
+		"title": "HotFreshGames",
+		"desc": "Showcase website for some recent game development I've been working on with Troy and Dave. Includes a download link to the exciting new BlokDodge Alpha!",
 		"tech": "BackboneJS, RequireJS, UnderscoreJS, Adobe",
 		"imgURL": "images/hotfreshgames.png",
 		"linkTitle": "HotFreshGames.com",
@@ -56,7 +57,7 @@
 	{
 		"id": 7,
 		"title": "This Website!",
-		"desc": "This website is both my online portfolio and a constantly changing labor of love. Last week it was an Angular-based application...this week its BackboneJS &amp RequireJS :D",
+		"desc": "This website is both my online portfolio and a constantly changing labor of love. It was previously an Angular-based application...but is now using BackboneJS &amp RequireJS :D",
 		"tech": "AWS CLI,  Javascript, BackboneJS, RequireJS,S3 Buckets, Github",
 		"imgURL": "",
 		"linkTitle": "Source Code",

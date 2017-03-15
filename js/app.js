@@ -8,7 +8,8 @@
         // css: '../css',
         html: '../html',
         tether: 'tether',
-        d3: 'd3.v4.min',
+        d3: 'd3.v3.min',
+        d3tip: 'd3.tip',
         data: '../data',
         SVG: '../svg',
 
@@ -20,6 +21,9 @@
         'backbone': {
             deps: ['underscore', 'jquery'],
             exports: 'Backbone'
+        },
+        'd3tip':{
+            deps: ['d3']
         },
         'underscore': {
             exports: '_'
