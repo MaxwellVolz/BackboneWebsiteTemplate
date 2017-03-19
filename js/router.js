@@ -8,7 +8,6 @@ define(function (require) {
         InOtherWordsView   = require('js/views/sites/inOtherWords'),
         PoeLadderView  = require('js/views/sites/PoeLadder'),
         // FangChatView   = require('js/views/sites/fangChat'),
-
         $body = $('body'),
         $content = $("#mainContent"),
         homeView = new HomeView(),
@@ -23,7 +22,7 @@ define(function (require) {
                 "": "home",
                 "home": "home",
                 "iow":"inOtherWords",
-                "poe":"PoeLadder",
+                "*poe":"PoeLadder",
                 "fangchat":"fangChat",
                 "projects": "projects",
                 "employees/:id": "employeeDetails"

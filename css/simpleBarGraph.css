@@ -4,23 +4,24 @@
   width: 100%;
 }
 
-.axis text {
+
+#poeLadder .axis text {
   font: 10px sans-serif;
 }
 
-.axis path,
-.axis line {
+#poeLadder .axis path,
+#poeLadder .axis line {
   fill: none;
   stroke: #000;
   shape-rendering: crispEdges;
 }
 
-.bar {
+#poeLadder .bar {
   /*fill: steelblue;*/
   fill-opacity: .9;
 }
 
-.x.axis path {
+#poeLadder .x.axis path {
   display: none;
 }
 
@@ -33,7 +34,7 @@ label {
 
 /* just tip stuff */
 
-.d3-tip {
+.d3-tip,.d3-tip2 {
   line-height: 1;
   font-weight: bold;
   padding: 12px;
@@ -43,7 +44,7 @@ label {
 }
 
 /* Creates a small triangle extender for the tooltip */
-.d3-tip:after {
+.d3-tip:after  {
   box-sizing: border-box;
   display: inline;
   font-size: 10px;
@@ -56,13 +57,13 @@ label {
 }
 
 /* Style northward tooltips differently */
-.d3-tip.n:after {
+.d3-tip.n:after, .d3-tip2:after {
   margin: -1px 0 0 0;
   top: 100%;
   left: 0;
 }
 
-.simpleBarSVG{
+#poeLadder .simpleBarSVG{
 	width:1800px;
 	display: block;
 	margin:0px;

@@ -1,0 +1,56 @@
+#poeLine {
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  width: 100%;
+}
+
+path.line {
+  fill: none;
+  stroke: #666;
+  stroke-width: 6px;
+}
+
+path.area {
+  fill: #e7e7e7;
+}
+
+.axis {
+  shape-rendering: crispEdges;
+}
+
+.x.axis line {
+  stroke: #fff;
+}
+
+.x.axis .minor {
+  stroke-opacity: .5;
+}
+
+.x.axis path {
+  display: none;
+  stroke: #000;
+   stroke-width: .5px;
+}
+
+.y.axis line, .y.axis path {
+  /*fill: none;*/
+  stroke: #000;
+   stroke-width: .5px;
+}
+.guideline {
+  margin-right: 100px;
+  float: right;
+}
+
+#charTable > tr > td:first-letter {
+    text-transform:capitalize;
+}
+
+.legendColor{
+  height: 20px;
+  width: 20px;
+}
+.deadTrue{
+  color:red;
+}
