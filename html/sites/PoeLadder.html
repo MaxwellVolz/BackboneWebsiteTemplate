@@ -2,7 +2,7 @@
 <section class="jumbotron text-center" style="border-radius:0">
 	<div class="container">
 		<h1 class="jumbotron-heading">PoE Ladder Tracker</h1>
-		<p class="lead text-muted">a visualizer for Path of Exiles ladder</p>
+		<p class="lead text-muted">a visualizer for Path of Exiles Hardcore Legacy League</p>
 
 		<a class="btn btn-lg btn-primary" href="#" role="button">Back</a>
 	</div>
@@ -20,7 +20,7 @@
 		        <th>Level</th>
 		        <th>Class</th>
 		        <th>Rank</th>
-		        <th>Legend</th>
+		        <!-- <th>Legend</th> -->
 		        <!-- <th>Remove</th> -->
 		      </tr>
 		    </thead>
@@ -32,11 +32,15 @@
 </section>
 
 
-<section class="jumbotron text-center" style="border-radius:0;padding-top:0">
+
+<div id="HCcontainer"></div>
+<!-- 
+<section class="jumbotron text-center" style="border-radius:0;padding-top:0;height:500px">
 	<div class="container" id="poeLine" style="background-color:white">
 	</div>
-</section>
+</section> -->
 <section class="jumbotron text-center" style="border-radius:0">
+	<h1>Top 80</h1>
 	<label><input type="checkbox" id="sortVals"> Sort values <input type="checkbox" id="sortClass"> Sort by class</label>
 	<div class="container" id="poeLadder" style="background-color:white">
 	</div>

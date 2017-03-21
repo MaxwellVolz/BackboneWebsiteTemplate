@@ -54,3 +54,11 @@ path.area {
 .deadTrue{
   color:red;
 }
+
+ #HCcontainer {
+  min-width: 600px;
+  max-width: 1200px;
+  height: 600px;
+  margin: 0 auto
+
+}

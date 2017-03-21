@@ -8,8 +8,18 @@
         // css: '../css',
         html: '../html',
         tether: 'tether',
+
+        //d3
         d3: 'd3.v3.min',
         d3tip: 'd3.tip',
+
+        //d2
+        // d2: 'd3.v2',
+
+        //highcharts
+        highcharts : 'highcharts',
+
+
         data: '../data',
         SVG: '../svg',
 
@@ -24,6 +34,9 @@
         },
         'd3tip':{
             deps: ['d3']
+        },
+        'highcharts':{
+            deps: ['jquery']
         },
         'underscore': {
             exports: '_'

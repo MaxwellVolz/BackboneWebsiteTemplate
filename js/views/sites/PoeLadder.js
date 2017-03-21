@@ -8,6 +8,7 @@ define(function (require) {
         tether              = require('tether'),
         d3                  = require('d3'),
         d3tip               = require('d3tip'),
+        highcharts          = require('highcharts'),
         bootstrap           = require('bootstrap'),
         poeData             = require('json!../../../data/poeData.json'),
         poeDB               = require('json!../../../data/jsonDB.json'),
@@ -32,7 +33,7 @@ define(function (require) {
                                 "<td><%= item.level %></td>" +
                                 "<td><%= item.class %></td>" +
                                 "<td><%= item.rank %></td>" +
-                                "<td><div class='legendColor'></div></td>" +
+                                // "<td><div class='legendColor'></div></td>" +
                                 // "<td>Remove</td>" +
                                 "<tr/> <% }) %>"),
 
@@ -107,7 +108,153 @@ define(function (require) {
                 }
             }
 
+            self.drawHighchart();
+
             return this;
+        },
+        prepHighcharts:function(data,namesArray){
+            // console.log("prepHighcharts");
+            // console.log("data");
+            // console.log(data);
+            
+            var self = this;
+
+            var lineGraphData = [],
+                oneChar = [];
+
+
+            var mostXP = 0;
+            var leastXP = 45000000000;
+            var timeEntries = [];
+
+            _.each(data,function(d){
+                if(Number(d.exp) > mostXP){ mostXP = Number(d.exp)};
+
+                if(Number(d.exp) < leastXP){ leastXP = Number(d.exp)};
+
+                if(!_.contains(timeEntries,d.date)){
+                    timeEntries.push(d.date);
+                }
+            });
+
+
+            var lineGraphMetrics = {
+                minDate: new Date(_.min(data, function(d){ return Date.parse(d.date); }).date),
+                maxDate: new Date(_.max(data, function(d){  return Date.parse(d.date); }).date),
+                maxXP: mostXP,
+                minXP: leastXP
+            };
+            
+            console.log("maxXP");
+            console.log(mostXP);
+            console.log("leastXP");
+            console.log(leastXP);
+            console.log("timeEntries");
+            console.log(timeEntries);
+
+            _.each(namesArray,function(val,key){
+                var oneChar = {
+                    name: val,
+                    data: []
+                };
+                _.map(data,function(v,k){
+                    if(v.name.toLowerCase() == val.toLowerCase()){
+
+                        var d = v.date;
+
+                        var year = d.split("-")[0];
+                        var month = d.split("-")[1];
+                        var day = d.split("-")[2].split(" ")[0];
+                        var hour = d.split("-")[2].split(" ")[1].split(":")[0]
+                        var minute = d.split("-")[2].split(" ")[1].split(":")[1]
+
+
+                        v.date = Date.UTC(year, month, day, hour, minute);
+
+                        var n = Number(v.exp);
+                        v.exp = n;
+
+
+
+                        oneChar.data.push([v.date,v.exp]);
+                    }
+                })
+                lineGraphData.push(oneChar);
+            });
+
+            var newLineGraphData = []
+
+            // character
+            
+            console.log("lineGraphData");
+            console.log(lineGraphData);
+            console.log("newLineGraphData");
+            console.log(newLineGraphData);
+
+            var highchartStart = timeEntries[0];
+
+
+
+            // var year = highchartStart.split("-")[0];
+            
+
+            self.drawHighchart(lineGraphData,highchartStart);
+
+            // self.drawLineGraph(lineGraphData,lineGraphMetrics);
+        },
+        drawHighchart: function(lineGraphData,highchartStart){
+            var self = this;
+
+            Highcharts.setOptions({
+                lang: {
+                    thousandsSep: ','
+                }
+            });
+
+            Highcharts.chart('HCcontainer', {
+                chart: {
+                    type: 'spline'
+                },
+                title: {
+                    text: ''
+                },
+                subtitle: {
+                    text: ''
+                },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: { // don't display the dummy year
+                        month: '%e. %b',
+                        year: '%b'
+                    },
+                    title: {
+                        text: 'Date'
+                    }
+                },
+                yAxis: {
+                    title: {
+                        text: 'Experience'
+                    },
+                    min: 0
+                },
+                tooltip: {
+                    headerFormat: '<b>{series.name}</b><br>',
+                    pointFormat: '{point.x:%e. %b}: {point.y} experience'
+                },
+
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            enabled: true
+                        }
+                    }
+                },
+
+                series: lineGraphData
+            });
+
+
+
         },
         prepTableData:function(namesArray,data){
 
@@ -124,6 +271,11 @@ define(function (require) {
             _.each(namesArray,function(val,key){
                 lastIndex = _.findLastIndex(lowerCaseData, { name: val.toLowerCase() });
 
+                console.log("lastIndex");
+                console.log(lastIndex);
+                if(lastIndex == -1){
+                    return;
+                }
                 tableData.push(data[lastIndex]);
             });
 
@@ -136,7 +288,9 @@ define(function (require) {
         makeCharacterTable:function(data){
             var self = this;
 
-            data = _.sortBy(data, function(d){ return -d.exp; });
+            data = _.sortBy(data, function(d){ 
+                    return -d.exp; 
+            });
 
             $("tbody#charTable").html( self.charTableTemplate({ models: data}));
 
@@ -163,8 +317,19 @@ define(function (require) {
 
                 var data = $.parseJSON(self.convertCSVtoJSON(data.response));
 
+                console.log("Daves data:");
+                console.log(data);
+
+                _.each(data,function(v,k){
+                    if(v.name == "" || v.name == undefined){
+                        data.splice(k,1);
+                    }
+                })
+
                 // self.drawLineGraph2(data);
-                self.prepLineData(data,namesArray);
+                // self.prepLineData(data,namesArray);
+
+                self.prepHighcharts(data,namesArray);
 
 
                 self.prepTableData(namesArray,data);
@@ -415,12 +580,30 @@ define(function (require) {
             var lineGraphData = [],
                 oneChar = [];
 
+
+            var mostXP = 0;
+            var leastXP = 45000000000;
+
+            _.each(data,function(d){
+                if(Number(d.exp) > mostXP){ mostXP = Number(d.exp)};
+
+                if(Number(d.exp) < leastXP){ leastXP = Number(d.exp)};
+
+            });
+
+
             var lineGraphMetrics = {
                 minDate: new Date(_.min(data, function(d){ return Date.parse(d.date); }).date),
                 maxDate: new Date(_.max(data, function(d){  return Date.parse(d.date); }).date),
-                maxXP: _.max(data,function(d){ return d.exp; }).exp,
-                minXP: _.min(data,function(d){ return d.exp; }).exp
+                maxXP: mostXP,
+                minXP: leastXP
             };
+            
+
+            console.log("maxXP");
+            console.log(mostXP);
+            console.log("leastXP");
+            console.log(leastXP);
 
             _.each(namesArray,function(val,key){
                 var oneChar = [];
@@ -436,7 +619,10 @@ define(function (require) {
                 })
                 lineGraphData.push(oneChar);
 
-            })
+            });
+
+            console.log("lineGraphMetrics");
+            console.log(lineGraphMetrics);
 
             self.drawLineGraph(lineGraphData,lineGraphMetrics);
         },
@@ -463,7 +649,6 @@ define(function (require) {
 
         drawLineGraph: function(lineGraphData,lineGraphMetrics){
 
-                        
             $("#poeLine").empty();
 
             var margin = {top: 80, right: 80, bottom: 80, left: 80},
@@ -491,8 +676,12 @@ define(function (require) {
                 .interpolate("monotone")
                 // .x(function(d) { return x(d.date); })
                 // .y(function(d) { return y(d.price); });
-                .x(function(d) { return x(d.date); })
-                .y(function(d) { return y(d.exp); });
+                .x(function(d) { 
+                    // console.log("d.date: " + d.date);
+                    return x(d.date); })
+                .y(function(d) { 
+                    // console.log("d.exp: " + d.exp);
+                    return y(d.exp); });
 
             var tip = d3.tip()
                 .attr('class', 'd3-tip2')
@@ -511,25 +700,14 @@ define(function (require) {
 
             d3.csv("readme.csv", type, function(error, data) {
 
-              // Filter to one symbol; the S&P 500.
-              var values = data.filter(function(d) {
-                return d.symbol == "AMZN";;
-              });
 
-              var msft = data.filter(function(d) {
-                return d.symbol == "MSFT";
-              });
-
-              var ibm = data.filter(function(d) {
-                return d.symbol == 'IBM';
-              });
 
               // Compute the minimum and maximum date, and the maximum price.
               // x.domain([values[0].date, values[values.length - 1].date]);
               // y.domain([0, d3.max(values, function(d) { return d.price; })]).nice();
 
             x.domain([lineGraphMetrics.minDate, lineGraphMetrics.maxDate]);
-            y.domain([Number(lineGraphMetrics.minXP) - 10000, Number(lineGraphMetrics.maxXP) + 10000]).nice();
+            y.domain([Number(lineGraphMetrics.minXP) - 10000000, Number(lineGraphMetrics.maxXP) + 10000000]).nice();
 
               // Add an SVG element with the desired dimensions and margin.
               var svg = d3.select("#poeLine").append("svg")
@@ -571,17 +749,18 @@ define(function (require) {
                         var strokeColor = colors(Math.random() * 50);
 
                         var tableRow = $("#charTable > tr > td").filter(function() {
+                            if(d[0] == undefined) return;
                             return $(this).text() == d[0].name;
                         }).closest("tr");
                         $(tableRow).find(".legendColor").css("background-color",strokeColor);
-                        console.log(tableRow);
+                        // console.log(tableRow);
                         // $("#charTable > tr").
                       return strokeColor;
                     })
                     .attr('clip-path', 'url(#clip)')
                     .attr('d', function(d) {
-                        console.log("dddddd");
-                        console.log(d);
+                        // console.log("dddddd");
+                        // console.log(d);
                       return line(d);
                     })
                     .on('mouseover', tip.show)
@@ -681,18 +860,125 @@ define(function (require) {
             }
             myFunction();
         },
-        prepData: function(data){
-            // console.log("data");
-            // console.log(data);
+        drawBetterLineGraph: function(){
 
+            function log(text) {
+              if (console && console.log) console.log(text);
+              return text;
+            }
+
+            (function() {
+              var margin = {top: 30, right: 10, bottom: 50, left: 60},
+                  chart = d3LineWithLegend()
+                            .xAxis.label('Time (ms)')
+                            .width(width(margin))
+                            .height(height(margin))
+                            .yAxis.label('Voltage (v)');
+
+
+              var svg = d3.select('#test1 svg')
+                  .datum(generateData())
+
+              svg.transition().duration(500)
+                  .attr('width', width(margin))
+                  .attr('height', height(margin))
+                  .call(chart);
+
+
+              chart.dispatch.on('showTooltip', function(e) {
+              var offset = $('#test1').offset(), // { left: 0, top: 0 }
+                    left = e.pos[0] + offset.left,
+                    top = e.pos[1] + offset.top,
+                    formatter = d3.format(".04f");
+
+                var content = '<h3>' + e.series.label + '</h3>' +
+                              '<p>' +
+                              '<span class="value">[' + e.point[0] + ', ' + formatter(e.point[1]) + ']</span>' +
+                              '</p>';
+
+                nvtooltip.show([left, top], content);
+              });
+
+              chart.dispatch.on('hideTooltip', function(e) {
+                nvtooltip.cleanup();
+              });
+
+
+
+
+              $(window).resize(function() {
+                var margin = chart.margin();
+
+                chart
+                  .width(width(margin))
+                  .height(height(margin));
+
+                d3.select('#test1 svg')
+                  .attr('width', width(margin))
+                  .attr('height', height(margin))
+                  .call(chart);
+
+                });
+
+
+
+
+              function width(margin) {
+                var w = $(window).width() - 20;
+
+                return ( (w - margin.left - margin.right - 20) < 0 ) ? margin.left + margin.right + 2 : w;
+              }
+
+              function height(margin) {
+                var h = $(window).height() - 20;
+
+                return ( h - margin.top - margin.bottom - 20 < 0 ) ? 
+                          margin.top + margin.bottom + 2 : h;
+              }
+
+
+              //data
+              function generateData() {
+                var sin = [],
+                    sin2 = [],
+                    cos = [],
+                    cos2 = [],
+                    r1 = Math.random(),
+                    r2 = Math.random(),
+                    r3 = Math.random(),
+                    r4 = Math.random();
+
+                for (var i = 0; i < 100; i++) {
+                  sin.push([ i, r1 * Math.sin( r2 +  i / (10 * (r4 + .5) ))]);
+                  cos.push([ i, r2 * Math.cos( r3 + i / (10 * (r3 + .5) ))]);
+                  sin2.push([ i, r3 * Math.sin( r1 + i / (10 * (r2 + .5) ))]);
+                  cos2.push([ i, r4 * Math.cos( r4 + i / (10 * (r1 + .5) ))]);
+                }
+
+                return [
+                  {
+                    data: sin,
+                    label: "Sine Wave"
+                  },
+                  {
+                    data: cos,
+                    label: "Cosine Wave"
+                  },
+                  {
+                    data: sin2,
+                    label: "Sine2 Wave"
+                  },
+                  {
+                    data: cos2,
+                    label: "Cosine2 Wave"
+                  }
+                ];
+              }
+
+            });
 
         },
-        renderData: function(data){
 
 
-        },
-        renderProjects: function(){
-
-        },
     });
 });
