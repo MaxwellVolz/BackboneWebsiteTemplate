@@ -54,11 +54,24 @@ path.area {
 .deadTrue{
   color:red;
 }
+.barBtn,#sortVals,#sortClass{
+  margin:5px;
+}
 
  #HCcontainer {
-  min-width: 600px;
-  max-width: 1200px;
-  height: 600px;
-  margin: 0 auto
+  width:100% !important;
+  height:100% !important;
+  /*height:100% !important;*/
+  /*height: 800px !important;*/
+  margin: 0 auto;
+  text-align:center;
 
+}
+
+.highcharts-container {
+    
+}
+.loadingSVG{
+  margin-top:140px;
+  /*margin: 0 auto;*/
 }

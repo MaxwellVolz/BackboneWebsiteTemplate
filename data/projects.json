@@ -1,5 +1,13 @@
 [
-	
+	{
+		"id": 0,
+		"title": "PoE Tracker",
+		"desc": "Showcases some of my abilities to integrate different graphing libraries and APIs within my backbone web application. Updates every hour. Source on Github",
+		"tech": "D3js, Highcharts, RestFul APIs, RDS on Amazon webservices",
+		"imgURL": "images/poe.gif",
+		"linkTitle": "PoE Tracker",
+		"linkURL":"/#poe/energypizza+shripper+nitrodubs+Zizaranek"
+	},
 	{
 		"id": 1,
 		"title": "HotFreshGames",

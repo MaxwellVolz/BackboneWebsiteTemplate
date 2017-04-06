@@ -64,7 +64,7 @@ label {
 }
 
 #poeLadder .simpleBarSVG{
-	width:1800px;
+	width:100%;
 	display: block;
 	margin:0px;
 }
